@@ -1,0 +1,9 @@
+HTML
+Tailwind CSS
+VANILLA JS
+
+Libraries :) ->
+GSAP (Green Sock Animation)
+Split Type (Text Split)
+Lenis (Smooth Scroller)
+Swiper (Carousel)

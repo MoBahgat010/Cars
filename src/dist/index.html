@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../CSS/output.css">
+  <!-- Script Files -->
+  <script src="https://cdn.tailwindcss.com" defer></script>
+  <script src="../JS/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://unpkg.com/split-type" defer></script>
+  <script src="https://unpkg.com/lenis@1.1.3/dist/lenis.min.js" defer></script> 
+  <script src="../JS/Swiper/swiper-bundle.min.js" defer></script>
+  <script src="../JS/script.js" defer></script>
+  </head>
+  <body class="font-body bg-black">
+    <header class="text-white w-[100%] md:text-xs lg:text-base sticky top-0 py-2 md:py-0 z-[100] bg-black">
+        <div class="container mx-auto px-5 md:px-0">
+          <nav class="flex items-center md:relative">
+            <a href="#" class="hidden md:block mr-auto md:w-[10rem] lg:w-[15rem] hover:text-[#C2A56B]">
+              <div class="flex items-center justify-start gap-3">
+                <div class="h-fit w-fit">
+                  <i class=" fa-solid fa-phone h-fit w-fit"></i>
+                </div>
+                <p class="">+2 10 23 2626 49</p>
+              </div>
+            </a>
+            <a href="#" class="md:hidden mr-auto">
+              <img src="../Images/light_logo.png" class="w-[101.81px] h-[75.78px] md:w-[60%] md:h-[60%] object-contain" alt="light_logo">
+            </a>
+            <ul class="md:static px-3 md:px-0 md:flex items-center md:justify-center md:text-center absolute z-50 top-[-350%] h-fit w-[100%] left-0 md:gap-6 opacity-0 md:opacity-100 bg-black py-5 md:py-0" id="ulInNav">
+              <li class="relative group/edit md:py-[4%]">
+                <a href="#" class="hover:text-[#C2A56B] after:hover:bg-[#C2A56B]  flex md:block relative duration-1000 hover:duration-1000 md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 md:after:-left-4 after:h-[2px]">
+                  <p class="mr-auto">
+                    HOME
+                  </p>
+                  <div class="flex items-center justify-center mr-3">
+                    <i class="fa-solid fa-arrow-right md:hidden"></i>
+                  </div>
+                </a>
+                <div class="md:hidden w-[100%] h-[2px] bg-gray-500 mt-1"></div>
+                <div class="w-[100%] h-0 md:h-fit py-0 md:py-4 relative z-50 transition-all md:block md:absolute md:top-[200%] md:-left-10 md:w-[15rem] bg-black opacity-0 px-6 invisible md:group-hover/edit:top-[100%] md:group-hover/edit:opacity-100 md:group-hover/edit:visible duration-300">
+                  <a href="#" class="after:hover:bg-[#C2A56B] hover:text-[#C2A56B] flex md:block text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                    Main Home
+                  </a>
+                  <a href="#" class="hover:text-[#C2A56B] after:hover:bg-[#C2A56B]  flex mt-2 md:block text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                    Premium Vehicles
+                  </a>
+                </div>
+              </li>
+              <li class="lg:ml-3 group/edit relative md:py-[4%]">
+                <a href="#" class="hover:text-[#C2A56B] after:hover:bg-[#C2A56B] flex md:block relative duration-1000 hover:duration-1000 md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 md:after:-left-4 after:h-[2px]">
+                  <p class="mr-auto">
+                    PAGES
+                  </p>
+                  <div class="flex items-center justify-center mr-3">
+                    <i class="fa-solid fa-arrow-right md:hidden"></i>
+                  </div>
+                </a>
+                <div class="md:hidden w-[100%] h-[2px] bg-gray-500 mt-1"></div>
+                <div class="w-[100%] h-0 md:h-fit py-0 md:py-4 relative z-50 transition-all md:block md:absolute md:top-[200%] md:-left-10 md:w-[15rem] bg-black opacity-0 px-6 invisible md:group-hover/edit:top-[100%] md:group-hover/edit:opacity-100 md:group-hover/edit:visible duration-300">
+                  <a href="#" class="hover:text-[#C2A56B] after:hover:bg-[#C2A56B] flex md:block text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                    About Us
+                  </a>
+                  <a href="#" class="hover:text-[#C2A56B] after:hover:bg-[#C2A56B] flex mt-2 md:block text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                    What We Offer
+                  </a>
+                  <a href="#" class="hover:text-[#C2A56B] after:hover:bg-[#C2A56B] flex mt-2 md:block text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                    Our Services
+                  </a>
+                  <a href="#" class="hover:text-[#C2A56B] after:hover:bg-[#C2A56B] flex mt-2 md:block text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                    Our Drivers
+                  </a>
+                  <a href="#" class="hover:text-[#C2A56B] after:hover:bg-[#C2A56B] flex mt-2 md:block text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                    FAQ
+                  </a>
+                  <a href="#" class="hover:text-[#C2A56B] after:hover:bg-[#C2A56B] flex mt-2 md:block text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                    Pricing Plans
+                  </a>
+                  <a href="#" class="hover:text-[#C2A56B] after:hover:bg-[#C2A56B] flex mt-2 md:block text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                    Contact
+                  </a>
+                </div>
+              </li>
+              <li class="md:col-span-2 lg:ml-5 group/edit relative my-2 md:my-0 md:py-[4%]">
+                <a href="#" class="hover:text-[#C2A56B] after:hover:bg-[#C2A56B] text-nowrap flex md:block relative duration-1000 hover:duration-1000 md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 md:after:-left-4 after:h-[2px]">
+                  <p class="mr-auto">
+                    VEHICLE FLEET
+                  </p>
+                  <div class="flex items-center justify-center mr-3">
+                    <i class="fa-solid fa-arrow-right md:hidden"></i>
+                  </div>
+                </a>
+                <div class="md:hidden w-[100%] h-[2px] bg-gray-500 mt-1"></div>
+                <div class="w-[100%] h-0 md:h-fit py-0 md:py-4 relative z-50 transition-all md:block md:absolute md:top-[200%] md:-left-10 md:w-[15rem] bg-black opacity-0 px-6 invisible md:group-hover/edit:top-[100%] md:group-hover/edit:opacity-100 md:group-hover/edit:visible duration-300">
+                  <a href="#" class="hover:text-[#C2A56B] after:hover:bg-[#C2A56B] flex md:block text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                    Shop List
+                  </a>
+                  <a href="#" class="hover:text-[#C2A56B] after:hover:bg-[#C2A56B] flex mt-2 md:block text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                    Shop Layouts
+                  </a>
+                  <a href="#" class="hover:text-[#C2A56B] after:hover:bg-[#C2A56B] flex mt-2 md:block text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                    Product Single
+                  </a>
+                  <a href="#" class="hover:text-[#C2A56B] after:hover:bg-[#C2A56B] flex mt-2 md:block text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                    Shop Pages
+                  </a>
+                </div>
+              </li>
+              <li class="hidden lg:w-[101.81px] md:w-[50.9px] lg:h-[75.78px] md:h-[37.89px] md:flex">
+                <a href="#" class="flex w-[100%] h-[100%]">
+                  <img src="../Images/light_logo.png" class="w-[100%] h-[100%] object-cover" alt="light_logo">
+                </a>
+              </li>
+              <li class="group/edit relative my-2 md:my-0 md:py-[4%]">
+                <a href="#" class="hover:text-[#C2A56B] after:hover:bg-[#C2A56B] flex lg:mr-5 md:block relative duration-1000 hover:duration-1000 md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 md:after:-left-4 after:h-[2px]">
+                  <p class="mr-auto">
+                    SHOP
+                  </p>
+                  <div class="flex items-center justify-center mr-3">
+                    <i class="fa-solid fa-arrow-right md:hidden"></i>
+                  </div>
+                </a>
+                <div class="md:hidden w-[100%] h-[2px] bg-gray-500 mt-1"></div>
+                <div class="w-[100%] h-0 md:h-fit py-0 relative z-50 md:py-4 transition-all md:block md:absolute md:top-[200%] md:-left-10 md:w-[15rem] bg-black opacity-0 px-6 invisible md:group-hover/edit:top-[100%] md:group-hover/edit:opacity-100 md:group-hover/edit:visible duration-300">
+                  <a href="#" class="hover:text-[#C2A56B] after:hover:bg-[#C2A56B] flex md:block text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                    Shop List
+                  </a>
+                  <a href="#" class="hover:text-[#C2A56B] after:hover:bg-[#C2A56B] flex mt-2 text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                    <p class="mr-auto">Shop Layouts</p>
+                    <div class="flex items-center justify-center">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <!-- <div class="w-[100%] hidden h-0 md:h-fit py-0 md:py-4 relative z-[50] transition-all md:block md:absolute md:top-0 md:left-[100%] md:w-[15rem] bg-slate-600 opacity-0 px-6 invisible md:group-hover:top-[25%] md:group-hover:opacity-100 md:group-hover:visible duration-300">
+                      <a href="#" class="flex md:block text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                        Shop Three Columns
+                      </a>
+                      <a href="#" class="flex mt-2 md:block text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                        Shop Two Columns
+                      </a>
+                      <a href="#" class="flex mt-2 md:block text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                        Shop Full Width
+                      </a>
+                    </div> -->
+                  </a>
+                  <a href="#" class="hover:text-[#C2A56B] after:hover:bg-[#C2A56B]  flex mt-2 md:block text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                    Product Single
+                  </a>
+                  <a href="#" class="hover:text-[#C2A56B] after:hover:bg-[#C2A56B]  flex mt-2 text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                    <p class="mr-auto">Shop Pages</p>
+                    <div class="flex items-center justify-center">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <!-- <div class="w-[100%] h-0 md:h-fit py-0 md:py-4 relative z-50 transition-all md:block md:absolute md:top-0 md:left-[100%] md:w-[15rem] bg-slate-600 opacity-0 px-6 invisible md:group-hover/edit:top-[75%] md:group-hover/edit:opacity-100 md:group-hover/edit:visible duration-300">
+                      <a href="#" class="flex md:block text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                        Cart
+                      </a>
+                      <a href="#" class="flex mt-2 md:block text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                        Checkout
+                      </a>
+                      <a href="#" class="flex mt-2 md:block text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                        My Acoount
+                      </a>
+                    </div> -->
+                  </a>
+                </div>
+              </li>
+              <li class="group/edit relative my-2 md:my-0 md:py-[4%]">
+                <a href="#" class="hover:text-[#C2A56B] after:hover:bg-[#C2A56B]  flex md:block relative duration-1000 hover:duration-1000 md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 md:after:-left-4 after:h-[2px]"">
+                  <p class="mr-auto">
+                    BLOGS
+                  </p>
+                  <div class="flex items-center justify-center mr-3">
+                    <i class="fa-solid fa-arrow-right md:hidden"></i>
+                  </div>
+                </a>
+                <div class="md:hidden w-[100%] h-[2px] bg-gray-500 mt-1"></div>
+                <div class="w-[100%] h-0 md:h-fit py-0 md:py-4 relative z-50 transition-all md:block md:absolute md:top-[200%] md:-left-10 md:w-[15rem] bg-black opacity-0 px-6 invisible md:group-hover/edit:top-[100%] md:group-hover/edit:opacity-100 md:group-hover/edit:visible duration-300">
+                  <a href="#" class="hover:text-[#C2A56B] after:hover:bg-[#C2A56B] flex md:block text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                    Blog Left SideBar
+                  </a>
+                  <a href="#" class="hover:text-[#C2A56B] after:hover:bg-[#C2A56B] flex mt-2 md:block text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                    Blog Right SideBar
+                  </a>
+                  <a href="#" class="hover:text-[#C2A56B] after:hover:bg-[#C2A56B] flex mt-2 md:block text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                    Blog No SideBar
+                  </a>
+                  <a href="#" class="hover:text-[#C2A56B] after:hover:bg-[#C2A56B] flex mt-2 md:block text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                    Blog Single
+                  </a>
+                  <a href="#" class="hover:text-[#C2A56B] after:hover:bg-[#C2A56B] flex mt-2 text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                    <p class="mr-auto">Blog Type Pages</p>
+                    <div class="flex items-center justify-center">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <!-- <div class="w-[100%] h-0 hidden md:h-fit py-0 md:py-4 relative z-50 transition-all md:block md:absolute md:top-0 md:left-[100%] md:w-[15rem] bg-slate-600 opacity-0 px-6 invisible md:group-hover/edit:top-[75%] md:group-hover/edit:opacity-100 md:group-hover/edit:visible duration-300">
+                      <a href="#" class="flex md:block text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                        Blog Type Stock
+                      </a>
+                      <a href="#" class="flex mt-2 md:block text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                        Blog Type Quote
+                      </a>
+                      <a href="#" class="flex mt-2 md:block text-left relative hover:duration-1000 after:hover:w-[15px] md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 after:-left-5 md:after:-left-4 after:h-[2px]">
+                        Blog Type Video
+                      </a>
+                    </div> -->
+                  </a>
+                </div>
+              </li>
+              <li class="md:ml-3 lg:ml-5 group/edit relative md:py-[4%]">
+                <a href="#" class="hover:text-[#C2A56B] after:hover:bg-[#C2A56B]  flex md:block relative duration-1000 hover:duration-1000 md:after:hover:w-[10px] lg:after:hover:w-[15px] after:w-0 lg:after:visited:w-[15px] md:after:visited:w-[10px] after:absolute after:content-[''] after:top-[50%] after:translate-y-[-50%] after:bg-white lg:after:-left-5 md:after:-left-4 after:h-[2px]">
+                  <p class="mr-auto">
+                    LANDING
+                  </p>
+                </a>
+                <div class="md:hidden w-[100%] h-[2px] bg-gray-500 mt-1"></div>
+              </li>
+            </ul>
+            <div class="hidden ml-auto md:flex md:w-[8rem] lg:w-[20rem] h-[100%]">
+              <div class="group hover:cursor-pointer flex md:w-fit md:mr-3 lg:mr-0 lg:w-[3rem] xl:w-[5.5rem] items-center mr-auto justify-center">
+                <i id="cart" class="fa-solid fa-cart-shopping relative after:absolute after:top-[-100%] after:right-[-40%] after:bg-[#C2A56B] lg:after:w-[1rem] lg:after:h-[1.2rem] md:after:w-[0.7rem] md:after:h-[0.9rem] after:rounded-full after:flex after:justify-center after:items-center lg:after:text-[0.7rem] md:after:text-[0.5rem] md:scale-75 lg:scale-100"></i>
+                <div id="desired_cars" class="absolute top-[200%] group-hover:top-[100%] opacity-0 invisible group-hover:visible group-hover:opacity-100 duration-300 bg-black max-h-[25.5rem] overflow-x-hidden overflow-y-auto md:w-[15.1rem] lg:w-[20.5rem]"></div>
+              </div>
+              <a href="#" class="text-center hover:bg-[#C2A56B] hover:text-white duration-500 transition-colors lg:w-[142.75px] md:w-[130px] md:py-2 lg:py-4 border-2 border-[#C2A56B]">GET IN TOUCH</a>
+            </div>
+            <div class="md:hidden text-right hover:cursor-pointer relative z-40" id="menuBar">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+      </div>
+    </header> 
+    <section class="slider relative h-[100vh] w-[100%] overflow-hidden">
+      <div class="slide absolute top-0 left-0 w-[100%] h-[100%] z-10">
+        <img src="https://limodrive.wpthemeverse.com/wp-content/uploads/2024/01/blog-video_18.jpeg" class="object-cover w-[100%] h-[100%] absolute -z-10" alt="">
+        <div class="text-container absolute top-[50%] left-[8%] translate-y-[-50%] text-white overflow-hidden max-w-[40rem]">
+          <h1 id="test" class="text-[#C2A56B] text-[1.4rem] inline-block w-fit">The Ultimate Ride</h1>
+          <h1 class="text-[3.3rem] inline-block w-fit">Rent Your Fantasy Ride Today</h1>
+          <a href="#" class="block w-fit py-[1rem] px-[3rem] border-[2px] border-solid border-[#C2A56B] bg-transparent mt-5 hover:bg-[#C2A56B] hover:text-white duration-500 transition-colors">Explore More</a>
+        </div>
+      </div>
+      <div class="slide absolute top-0 left-0 w-[100%] h-[100%] -z-10" style="top: 0; width: 100%; height: 100%; z-index: -1; opacity: 0;">
+        <img src="../Images/home2_hero_banner3.png" class="object-cover w-[100%] h-[100%]" style="width: 100%; height: 100%; object-fit: cover;" alt="">
+        <div class="text-container absolute top-[50%] left-[8%] translate-y-[-50%] text-white overflow-hidden max-w-[45rem]">
+          <h1 class="text-[#C2A56B] text-[1.4rem] inline-block w-fit">Beyond Ordianry</h1>
+          <h1 class="text-[3.3rem] inline-block w-fit">Elevate Your Journey With Limondrive</h1>
+          <a href="#" class="block w-fit py-[1rem] px-[3rem] border-[2px] border-solid border-[#C2A56B] bg-transparent mt-5 hover:bg-[#C2A56B] hover:text-white duration-500 transition-colors">Explore More</a>
+        </div>
+      </div>
+      <div class="slide absolute top-0 left-0 w-[100%] h-[100%]" style="top: 0; width: 100%; height: 100%; z-index: 5; opacity: 0;">
+        <img src="../Images/home2_hero_banner2.png" class="object-cover w-[100%] h-[100%]" style="width: 100%; height: 100%; object-fit: cover;" alt="">
+        <div class="text-container absolute top-[50%] left-[8%] max-w-[47rem] overflow-hidden text-white">
+          <h1 class="text-[#C2A56B] text-[1.4rem] inline-block w-fit">Elevate Your Journey</h1>
+          <h1 class="text-[3.3rem] inline-block w-fit">Execlusive Luxury Cars At Your Fingertips</h1>
+          <a href="#" class="block w-fit py-[1rem] px-[3rem] border-[2px] border-solid border-[#C2A56B] bg-transparent mt-5 hover:bg-[#C2A56B] hover:text-white duration-500 transition-colors">Explore More</a>
+        </div>
+      </div>
+    </section>
+    <section class="services py-24 overflow-hidden">
+      <div class="inner-container mx-auto px-5 md:px-10 text-white">
+        <div class="pb-10">
+          <span class="block text-[#C2A56B] uppercase text-[16px] mb-8">Our SERVICES</span>
+          <h2 style="font-size: 46px; font-weight: 500;">Seamless Luxury Services</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div id="servicesLeft" class="image-container">
+            <div class="w-[100%] h-[25rem] relative after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-gradient-to-b after:from-transparent after:to-black">
+              <img src="../Images/services2_luxury_car.png" class="w-[100%] h-[100%] object-cover" alt="">
+            </div>
+            <a href="#" class="bg-[#0C1213] flex hover:underline hover:decoration-solid justify-center items-center h-[4rem] mb-3 uppercase text-[#C2A56B]">
+              View More
+            </a>
+            <div>
+              <h2 style="font-size: 30px; font-weight: 500; line-height: 5rem;">Luxury Vehicles</h2>
+              <p style="line-height: 30px; color: #979797;">Limodrive provide a fleet of high-end vehicles from well-known luxury brands. This may include cars from manufacturers like Mercedes-Benz, BMW, Audi, Jaguar, and more.</p>
+            </div>
+          </div>
+          <div id="servicesRight" class="image-container">
+            <div class="w-[100%] h-[25rem] relative after:absolute after:w-[100%] after:h-[100%] after:top-0 after:left-0 after:bg-gradient-to-b after:from-transparent after:to-black">
+              <img src="../Images/services1_chauffeur_services.png" class="w-[100%] h-[100%] object-cover" alt="">
+            </div><a href="#" class="bg-[#0C1213] flex hover:underline hover:decoration-solid justify-center items-center h-[4rem] mb-3 uppercase text-[#C2A56B]">
+              View More
+            </a>
+            <div>
+              <h2 style="font-size: 30px; font-weight: 500; line-height: 5rem;">Chauffeur Services</h2>
+              <p style="line-height: 30px; color: #979797;">We offer chauffeur services, allowing customers to relax and enjoy the ride while a professional driver takes care of the transportation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-us py-36 overflow-hidden" style="background: url(../Images/about_us_bg.png);">
+      <div class="inner-container mx-auto px-10 text-white">
+        <span class="block text-[#C2A56B] uppercase text-[16px] mb-3 tracking-[3.2px]">About Us</span>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+          <div>
+            <h2 class="text-[35px] lg:text-[46px]" style="font-weight: 500; margin-bottom: 2rem;">Explore LimoDrive</h2>
+            <p class="text-[14px] lg:text-[18px]" style="color: #979797; line-height: 35px;">Limousine rental offers the epitome of luxury transportation, providing stylish and spacious vehicles for various occasions. Whether for weddings, corporate events, proms, or a night on the town.</p>
+          </div>
+          <div id="aboutUSinfo" class="grid grid-cols-6">
+            <div class="col-span-1">
+              <p class="mt-0 lg:mt-[1rem]" style="text-transform: uppercase;line-height: 58px;letter-spacing: 2.3px;color: #C2A56B; font-size: 35px; margin-bottom: 3rem;">210+</p>
+              <p class="lg:text-3xl text-[#979797]">Luxury Cars</p>
+            </div>
+            <div class="w-[0.1rem] h-[100%] bg-[#C2A56B] ml-10"></div>
+            <div class="col-span-2">
+              <p class="mt-0 lg:mt-[1rem]" style="text-transform: uppercase;line-height: 58px;letter-spacing: 2.3px;color: #C2A56B; font-size: 35px; margin-bottom: 3rem;">15+</p>
+              <p class="lg:text-3xl text-[#979797]">Years of Experience</p>
+            </div>
+            <div class="w-[0.1rem] h-[100%] bg-[#C2A56B]"></div>
+            <div class="col-span-1">
+              <p class="mt-0 lg:mt-[1rem]" style="text-transform: uppercase;line-height: 58px;letter-spacing: 2.3px;color: #C2A56B; font-size: 35px; margin-bottom: 3rem;">14k</p>
+              <p class="lg:text-3xl text-[#979797]">Happy Clients</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="video-tour h-[15vh] sm:h-[32vh] md:h-[60vh] lg:h-[75vh] w-[100%] bg-[url('../Images/explore-limo.png')] bg-cover bg-center relative after:absolute after:inset-0 after:bg-[#00000069] hover:cursor-pointer">
+      <div class="relative inset-0 h-[100%] flex flex-col justify-center items-center z-10">
+        <div class="outer-image-container flex justify-center items-center w-[5rem] sm:w-[8rem] md:w-[18rem] h-[5rem] sm:h-[8rem] md:h-[18rem] rounded-full bg-[#f0e9e91c] mb-2 md:mb-5">
+          <div class="image-container flex justify-center items-center w-[2rem] sm:w-[4rem] md:w-[10rem] h-[2rem] sm:h-[4rem] md:h-[10rem] rounded-full border border-yellow-300">
+            <div class="inner-image-container flex justify-center items-center rounded-full w-[1rem] sm:w-[2rem] md:w-[5rem] h-[1rem] sm:h-[2rem] md:h-[5rem] bg-white">
+              <i class="fa-solid fa-play scale-75 md:scale-150 translate-x-[1.5px] text-[#C2A56B]"></i>
+            </div>
+          </div>
+        </div>
+        <div class="text-center">
+          <span class="text-[#C2A56B] text-[8px] sm:text-[12px] md:text-[16px] font-[500]">TAKE A VIDEO TOUR</span>
+          <h2 class="text-[15px] sm:text-[30px] md:text-[46px] font-[500] text-white">Fun and Adventure Awaits</h2>
+        </div>
+      </div>
+    </section>
+    <section class="data-cards w-[100%] py-24 px-4 bg-[#0c0c0c]">
+      <div class="text-center overflow-hidden">
+        <span class="text-[#C2A56B] text-[1rem] font-[500] tracking-[3.2px] block mb-[1rem]">EXCLUSIVE COLLECTION</span>
+        <h1 class="text-[46px] font-[500] text-white mb-[2rem]">Premier Limousine Rentals</h1>
+      </div>
+      <div class="swiper mySwiper">
+        <div id="swiper_slider" class="swiper-wrapper"></div>
+      </div> 
+    </section>
+    <section class="get-in-touch py-24 overflow-hidden" style="background: url(../Images/about_us_bg.png);">
+      <div class="container mx-auto px-5 md:px-0 flex flex-wrap items-center">
+        <div class="left-part w-[100%] md:w-[50%] pr-[1rem]">
+          <span class="text-[#C2A56B] tracking-[3.2px] text-[0.6rem] md:text-[0.8rem] lg:text-[1rem]">GET IN TOUCH</span>
+          <h2 class="text-white text-[36px] md:text-[40px] lg:text-[46px] my-5 w-[20rem]">Reach Out to Us Today</h2>
+          <p class="w-[100%] text-[16px] md:text-[13px] lg:text-[16px] my-5" style="line-height: 30px; color: #979797;">Connect with us today for personalized assistance and support. Our team is ready to address your needs and provide the guidance you're looking for.
+            Reach out to us and experience the difference in service and care.</p>
+          <div class="flex flex-wrap w-[100%]">
+            <div class="phone border-l-2 border-[#C2A56B] px-10 py-5 w-[50%] overflow-hidden">
+              <i class="fa-solid fa-phone-volume text-[#C2A56B] mb-5 scale-150 md:scale-100 lg:scale-150 ml-2"></i>
+              <h3 class="text-[#54595F] mb-3 text-[18px] md:text[13px] lg:text-[18px]">PHONE</h3>
+              <p class="text-white text-[20px] md:text-[14px] lg:text-[20px]">+1 524 9205 320</p>
+            </div>
+            <div class="email border-l-2 border-[#C2A56B] px-10 py-5 w-[50%] overflow-hidden">
+              <i class="fa-solid fa-envelope text-[#C2A56B] mb-5 scale-150 md:scale-100 lg:scale-150 ml-2"></i>
+              <h3 class="text-[#54595F] mb-3 text-[18px] md:text[13px] lg:text-[18px]">EMAIL</h3>
+              <p class="text-white text-[20px] md:text-[14px] lg:text-[20px]">info@limo.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="right-part w-[100%] md:w-[50%] pl-[0.5rem]">
+          <form action="#">
+            <div class="w-[100%]">
+              <div class="relative">
+                <input id="select_car_input" class="group/edit bg-transparent placeholder:text-[#979797] w-[100%] py-6 border-b-2 border-[#4d4d4d] focus:outline-none text-white" type="text" placeholder="Select Car">
+                <ul id="select_car_ul" class="absolute top-[100%] bg-gray-900 px-5 pt-5 w-[100%]"></ul>
+                <i class="fa-solid fa-caret-down absolute text-[#585858] right-5 bottom-[50%] translate-y-[50%]"></i>
+              </div>
+              <div class="relative">
+                <input class="bg-transparent placeholder:text-[#979797] w-[100%] py-6 border-b-2 border-[#4d4d4d] focus:outline-none text-white" type="text" placeholder="Pick Up Location">
+              </div>
+              <div class="flex gap-16">
+                <div id="select_time0" class="relative w-[50%]">
+                  <input class="group/edit bg-transparent placeholder:text-[#979797] w-[100%] py-6 border-b-2 border-[#4d4d4d] focus:outline-none text-white" type="text" placeholder="Select time">
+                  <ul id="select_time" class="absolute top-[100%] bg-gray-900 px-5 pt-5 w-[100%]"></ul>
+                  <i class="fa-solid fa-caret-down absolute text-[#585858] right-5 bottom-[50%] translate-y-[50%]"></i>
+                </div>
+                <div class="w-[50%]">
+                  <input class="bg-transparent placeholder:text-[#979797] w-[100%] py-6 border-b-2 border-[#4d4d4d] focus:outline-none text-[#979797]" type="date">
+                </div>
+              </div>
+              <div class="relative">
+                <input class="bg-transparent placeholder:text-[#979797] w-[100%] py-6 border-b-2 border-[#4d4d4d] focus:outline-none text-white" type="text" placeholder="Dropoff Location">
+              </div>
+              <div class="flex gap-16">
+                <div id="select_time1" class="relative w-[50%]">
+                  <input class="group/edit bg-transparent placeholder:text-[#979797] w-[100%] py-6 border-b-2 border-[#4d4d4d] focus:outline-none text-white" type="text" placeholder="Select time">
+                  <ul id="select_time" class="absolute top-[100%] bg-gray-900 px-5 pt-5 w-[100%]"></ul>
+                  <i class="fa-solid fa-caret-down absolute text-[#585858] right-5 bottom-[50%] translate-y-[50%]"></i>
+                </div>
+                <div class="w-[50%]">
+                  <input class="bg-transparent placeholder:text-[#979797] w-[100%] py-6 border-b-2 border-[#4d4d4d] focus:outline-none text-[#979797]" type="date">  
+                </div>
+              </div>
+              <button type="submit" class="px-14 py-4 mt-5 text-white border border-[#C2A56B] hover:bg-[#C2A56B] duration-300">SEND</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="guarantee flex relative w-[100%] h-[25vh] sm:h-[35vh] md:h-[60vh] lg:h-[100vh] px-3 sm:px-6 md:px-16 lg:px-24 bg-[url('../Images/we_gaurantee_img.png')] bg-cover items-center">
+      <div class="text-container w-[12rem] md:w-[23rem] lg:w-[27rem] absolute bottom-2 sm:bottom-5 md:bottom-10 lg:bottom-20" id="animated_part">
+        <span class="text-[#C2A56B] text-[0.6rem] md:text-[1rem]">TOP-NOTCH TREASURES</span>
+        <p class="text-white text-[1rem] md:text-[2rem] lg:text-[2.5rem] my-[0.8rem] sm:my-[1rem] md:my-[1.2rem] lg:my-[1.8rem] mx-0">We guarantee an unparalleled experience</p>
+        <a href="#" class="flex transition-all duration-500 relative w-fit items-center after:content-[''] after:absolute after:left-0 after:top-0 after:bottom-0 after:hover:right-0 after:bg-[#C2A56B] after:-z-10 p-[0.5rem] md:p-[0.8rem] lg:p-[1rem] border border-solid border-[#C2A56B]">
+          <p class="text-white text-[0.6rem] sm:text-[0.7rem] md:text-[0.9rem] lg:text-[1rem] mr-[0.8rem]">BOOK NOW</p>
+          <i class="fa-solid fa-arrow-up-right-from-square scale-75 sm:scale-100 text-white"></i>
+        </a>
+      </div>
+    </section>
+    <section class="chaffeurs py-24 bg-[url('../Images/about_us_bg.png')]">
+      <div class="container mx-auto flex flex-wrap items-center">
+        <div class="text w-[100%] md:w-[30%] px-5 mb-3 md:mb-0">
+          <span class="text-[#C2A56B]">OUR TEAM</span>
+          <h2 class="text-[28px] md:text-[35px] lg:text-[46px] text-white leading-[3rem] my-10">Our Proficient Chauffeur</h2>
+          <p class="text-[#979797] text-[16px] leading-8">Our professional chauffeurs are highly trained and experienced individuals dedicated to providing exceptional transportation services. With a focus on safety,
+          reliability, and customer satisfaction, our chauffeurs ensure a comfortable and luxurious travel experience for our clients.</p>
+        </div>
+        <div class="imgs w-[100%] md:w-[70%] flex flex-wrap px-1">
+          <div class="image-container w-[33.33%] md:w-[50%] mb-4 lg:w-[33.33%] px-3">
+            <img src="../Images/chauffeur_img1.png" class="mx-auto w-[100%] h-[100%] object-cover" alt="">
+          </div>
+          <div class="image-container w-[33.33%] md:w-[50%] mb-4 lg:w-[33.33%] px-3">
+            <img src="../Images/chauffeur_img2.png" class="mx-auto w-[100%] h-[100%] object-cover" alt="">
+          </div>
+          <div class="image-container w-[33.33%] md:w-[50%] mb-4 lg:w-[33.33%] px-3">
+            <img src="../Images/chauffeur_img3.png" class="mx-auto w-[100%] h-[100%] object-cover" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
